@@ -137,8 +137,8 @@ svg {
   left: 0;
 }
 .slide:nth-child(1) .slide__bg {
-  left: 0;
-  background-image: url("edited_selfie.jpg");
+  left: 00;
+  background-image: url("edited_selfie.JPG");
 }
 .slide:nth-child(1) .slide__overlay-path {
   fill: #ff8e78;
