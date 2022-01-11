@@ -5,7 +5,7 @@ function setup() {
 	createCanvas(window.innerWidth,window.innerHeight);
 	background(100);
 	fill("#151023")
-	pixelDensity(2)
+	pixelDensity(3)
 	rect(0,0,width,height)
 	for(var i=0;i<height;i+=4){
 		particles.push(new Particle({
