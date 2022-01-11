@@ -4,8 +4,6 @@
 
 }
 
-
-
 html,body{
     background: transparent;
     text-align: center;
@@ -20,6 +18,15 @@ html,body{
     z-index:-100;
 }
 
+.full-width {
+    width: 55%;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
 @media (min-width: 992px)
 {
   .sm-center
@@ -27,11 +34,14 @@ html,body{
     position: absolute;
     top: 200px;
     left: 200px;
-    //top: 40%;
-    //right: 20%;
-    //left: 10%;
-    //transform: translate(10%, -50%);
     width: auto;
+
+background: rgba( 220,220,220, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 }
 
@@ -45,6 +55,13 @@ html,body{
     left: 10%;
     transform: translate(10%, -50%);
     width: auto;
+
+background: rgba( 220,220,220, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 }
 
@@ -58,6 +75,13 @@ html,body{
     left: 8%;
     transform: translate(8%, -50%);
     width: auto;
+
+background: rgba( 220,220,220, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 }
 
@@ -71,6 +95,13 @@ html,body{
     left: 6%;
     transform: translate(6%, -50%);
     width: auto;
+
+background: rgba( 220,220,220, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 }
 
@@ -84,6 +115,13 @@ html,body{
     left: 4%;
     transform: translate(4%, -50%);
     width: auto;
+
+background: rgba( 220,220,220, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .sm-font {font-size: 14px;}
   .sm-font-head {font-size: 28px;}
@@ -100,6 +138,13 @@ html,body{
     left: 4%;
     transform: translate(4%, -50%);
     width: auto;
+
+background: rgba( 220,220,220, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .sm-font {font-size: 10px;}
   .sm-font-head {font-size: 20px;}
