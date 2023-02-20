@@ -27,25 +27,7 @@ html,body{
     margin-right: -50vw;
 }
 
-@media (min-width: 992px)
-{
-  .sm-center
-  {
-    position: absolute;
-    top: 200px;
-    left: 200px;
-    width: auto;
-
-background: rgba( 220,220,220, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
-backdrop-filter: blur( 12px );
--webkit-backdrop-filter: blur( 12px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }
-}
-
-@media (min-width: 992px) and (max-height: 575px)
+@media (min-width: 1px) and (min-height: 1px)
 {
   .sm-center
   {
@@ -53,103 +35,18 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     top: 50%;
     right: 20%;
     left: 10%;
-    transform: translate(10%, -50%);
+    transform: translate(40%, 200%);
     width: auto;
 
-background: rgba( 220,220,220, 0.2 );
+background: rgba(220, 220, 220, 0.104);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
-backdrop-filter: blur( 12px );
+backdrop-filter: blur( 3px );
 -webkit-backdrop-filter: blur( 12px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+border: 1px solid rgba(220, 220, 220, 0.104);
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px)
-{
-  .sm-center
-  {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    left: 8%;
-    transform: translate(8%, -50%);
-    width: auto;
-
-background: rgba( 220,220,220, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
-backdrop-filter: blur( 12px );
--webkit-backdrop-filter: blur( 12px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px)
-{
-  .sm-center
-  {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    left: 6%;
-    transform: translate(6%, -50%);
-    width: auto;
-
-background: rgba( 220,220,220, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
-backdrop-filter: blur( 12px );
--webkit-backdrop-filter: blur( 12px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }
-}
-
-@media (min-width: 421px) and (max-width: 575px)
-{
-  .sm-center
-  {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    left: 4%;
-    transform: translate(4%, -50%);
-    width: auto;
-
-background: rgba( 220,220,220, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
-backdrop-filter: blur( 12px );
--webkit-backdrop-filter: blur( 12px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }
-  .sm-font {font-size: 14px;}
-  .sm-font-head {font-size: 28px;}
-  .sm-font-subhead {font-size: 16px;}
-}
-
-@media (max-width: 420px)
-{
-  .sm-center
-  {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    left: 4%;
-    transform: translate(4%, -50%);
-    width: auto;
-
-background: rgba( 220,220,220, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
-backdrop-filter: blur( 12px );
--webkit-backdrop-filter: blur( 12px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }
-  .sm-font {font-size: 10px;}
-  .sm-font-head {font-size: 20px;}
-  .sm-font-subhead {font-size: 12px;}
-}
 
 canvas {display: block;}
 
