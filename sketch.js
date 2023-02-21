@@ -2,13 +2,23 @@ var colors = "083d77-ebebd3-f4d35e-ee964b-f95738-f24".split("-").map(a=>"#"+a)
 var colors2 = "22577a-38a3a5-57cc99-80ed99-c7f9cc-fff".split("-").map(a=>"#"+a)
 var particles = []
 var particle_multiplier = 7.6
+var mobile = false
 function setup() {
 	createCanvas(window.innerWidth,window.innerHeight);
+	// if the height is greater than the width, we're on a phone
+	if (window.innerHeight > window.innerWidth) {
+		// set the particle multiplier to 5
+		particle_multiplier = 12;
+	}
 	background(100);
 	fill("#151023")
 	pixelDensity(particle_multiplier / 2)
 	rect(0,0,width,height)
 	for(var i=0;i<height;i+=particle_multiplier){
+
+		if(mobile){
+			break;
+		}
 		particles.push(new Particle({
 			p: createVector(0,(i-height/2)+height/2),
 			v: createVector(1,-(i-height/2)/50),

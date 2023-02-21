@@ -18,8 +18,28 @@ html,body{
     z-index:-100;
 }
 
+.well {
+  padding: 30px;
+}
+
+.sm-font-subhead {
+  font-size: 2.0rem;
+}
+
+.sm-font {
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+h1.sm-font-head {
+  font-size: 60px;
+}
+
+
+
 .full-width {
-    width: 55%;
+    width: 75%;
+    height: 75%;
     position: relative;
     left: 50%;
     right: 50%;
@@ -35,12 +55,12 @@ html,body{
     top: 50%;
     right: 20%;
     left: 10%;
-    transform: translate(40%, 200%);
+    transform: translate(30%, 80%);
     width: auto;
 
 background: rgba(220, 220, 220, 0.104);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
-backdrop-filter: blur( 3px );
+backdrop-filter: blur(10px );
 -webkit-backdrop-filter: blur( 12px );
 border-radius: 10px;
 border: 1px solid rgba(220, 220, 220, 0.104);
