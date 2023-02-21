@@ -18,21 +18,9 @@ function setup() {
 	pixelDensity(particle_multiplier / pixel_density_modifier)
 	rect(0,0,width,height)
 	for(var i=0;i<height;i+=particle_multiplier){
-	// if mobile, make the particles spawn from the top 
-	if (mobile) {
-		particles = [];
-		for(var i=0;i<width;i+=particle_multiplier){
-			particles.push(new Particle({
-				p: createVector((i-width/2)+width/2,0),
-				v: createVector(-(i-width/2)/50,1),
-				a: createVector(0.04,0),
-				color: colors[int(i/50)%colors.length],
-				r: max(1,random(15)*random()*random())
-			}))
+		if(mobile){
+			break;
 		}
-	}
-	else{
-
 		particles.push(new Particle({
 			p: createVector(0,(i-height/2)+height/2),
 			v: createVector(1,-(i-height/2)/50),
@@ -40,8 +28,8 @@ function setup() {
 			color: colors[int(i/50)%colors.length],
 			r: max(1,random(15)*random()*random())
 		}))
+	
 	}
-}
 }
 
 function draw() {
@@ -56,6 +44,9 @@ function draw() {
 function mouseClicked() {
 	var num_particles = 40;
 	var circle_radius = 14;
+	if(mobile){
+		num_particles /= 4;
+	}
 	for (var i = 0; i < num_particles; i++) {
 	  var angle = i * (360 / num_particles);
 	  var x = mouseX + circle_radius * cos(radians(angle));
@@ -82,8 +73,8 @@ class Particle{
 			v: createVector(0,0),
 			a: createVector(0,0),
 			color: color(255),
-			rSpan: random([100]),
-			dashSpan: random([1,10,2]),
+			rSpan: random([120]),
+			dashSpan: random([90]),
 			r: 2
 		}
 		Object.assign(def,args)
@@ -94,15 +85,19 @@ class Particle{
 		this.lastP.y = this.p.y
 		this.p.add(this.v)
 		this.v.add(this.a)
-		
 			this.p.y+=sin(this.p.x/this.rSpan)*particle_multiplier
 			this.p.x+=sin(this.p.y/this.rSpan)*particle_multiplier
+		
 		if (int(this.p.x)%20==0){
-			this.v.x+=(noise(this.p.x*100,100000)-0.5)/10
-			this.v.y+=(noise(this.p.y*100,5)-0.5)/10
+			this.v.x+=(noise(this.p.x*100,100000)-0.5)/20
+			this.v.y+=(noise(this.p.y*100,5)-0.15)/20
 		}
-		let delta = createVector(width/2,height/2).sub(this.p)
-		this.p.add(delta.mult(0.1).limit(4))
+		let delta = createVector(width/2.2,height/2.2).sub(this.p) //
+		if(mobile){
+			this.p.add(delta.mult(0.003).limit(5))
+		}else{
+		this.p.add(delta.mult(0.035).limit(5))
+		}
 		this.v.mult(0.999)
 		this.r*=0.998
 	}
@@ -118,7 +113,7 @@ class Particle{
 			c.setAlpha(3)
 			stroke(c)
 			blendMode(SCREEN)
-		pop()
+		pop() // this pop is for the blendMode. blendMode is a way 
 		
 	}
 }
