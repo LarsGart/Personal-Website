@@ -1,62 +1,62 @@
 
 *:focus {
-    outline: none;
+  outline: none;
 
 }
 
 html,body{
-    background: transparent;
-    text-align: center;
-    overflow: hidden;
-    height: 100%; width: 100%;
+  background: transparent;
+  text-align: center;
+  overflow: hidden;
+  height: 100%; width: 100%;
 }
 
 #defaultCanvas0{
-    position:fixed;
-    top:0;
-    left: 0;
-    z-index:-100;
+  position:fixed;
+  top:0;
+  left: 0;
+  z-index:-100;
 }
 
 .well {
-  padding: 30px;
+padding: 30px;
 }
 
 .sm-font-subhead {
-  font-size: 2.0rem;
+font-size: 2.0rem;
 }
 
 .sm-font {
-  font-size: 1.5rem;
-  margin-top: -0.5rem;
+font-size: 1.5rem;
+margin-top: -0.5rem;
 }
 
 h1.sm-font-head {
-  font-size: 60px;
+font-size: 60px;
 }
 
 
 
 .full-width {
-    width: 75%;
-    height: 75%;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+  width: 75%;
+  height: 75%;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 @media (min-width: 1px) and (min-height: 1px)
 {
-  .sm-center
-  {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    left: 10%;
-    transform: translate(30%, 80%);
-    width: auto;
+.sm-center
+{
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  left: 10%;
+  transform: translate(30%, 80%);
+  width: auto;
 
 background: rgba(220, 220, 220, 0.104);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
@@ -64,7 +64,7 @@ backdrop-filter: blur(10px );
 -webkit-backdrop-filter: blur( 12px );
 border-radius: 10px;
 border: 1px solid rgba(220, 220, 220, 0.104);
-  }
+}
 }
 
 
@@ -72,10 +72,10 @@ canvas {display: block;}
 
 #particles-js
 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000022;
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #000022;
 }
 
 a:link, a:visited {color: #ff8c00; text-decoration: none;}
