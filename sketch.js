@@ -3,7 +3,7 @@ var colors2 = "22577a-38a3a5-57cc99-80ed99-c7f9cc-fff".split("-").map(a=>"#"+a)
 var particles = []
 var particle_multiplier = 5.6
 var mobile = false
-var pixel_density_modifier = 1
+var pixel_density_modifier = 3
 function setup() {
 	createCanvas(window.innerWidth,window.innerHeight);
 	// if the height is greater than the width, we're on a phone
@@ -16,7 +16,7 @@ function setup() {
 	background(100);
 	fill("#151023")
 	pixelDensity(particle_multiplier / pixel_density_modifier)
-	rect(0,0,width,height)
+	rect(0,0,width,height) // 
 	for(var i=0;i<height;i+=particle_multiplier){
 		if(mobile){
 			break;
